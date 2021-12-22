@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="que1" class="com.acecorp.Question">
+		<constructor-arg value="1" type="int"></constructor-arg>
+		<constructor-arg value="Prime numbers between 1-10 are?"></constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry key="1" value="(one)"></entry>
+				<entry key="2" value="(two)"></entry>
+				<entry key="3" value="(three)"></entry>
+				<entry key="5" value="(five)"></entry>
+				<entry key="7" value="(seven)"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+</beans>

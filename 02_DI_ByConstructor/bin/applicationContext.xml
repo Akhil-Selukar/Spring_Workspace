@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  	
+  	<!-- When created object using e1, will call consytructor with int -->
+	<bean id="e1" class="com.acecorp.Employee">  
+	<constructor-arg value="10" type="int"></constructor-arg>  
+	</bean>
+	
+	<!-- When created object with e2, will call constructor with String value -->
+	<bean id="e2" class="com.acecorp.Employee">  
+	<constructor-arg value="Akhil"></constructor-arg>  
+	</bean>  
+	  
+	 <!-- When created object with e3, will call constructor with string and int values -->
+	<bean id="e3" class="com.acecorp.Employee">  
+	<constructor-arg value="20" type="int"></constructor-arg>  
+	<constructor-arg value="Akhil"></constructor-arg>
+	</bean> 
+	
+</beans>  

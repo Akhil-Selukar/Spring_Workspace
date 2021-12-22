@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+
+	<bean id="emp1" class="com.acecorp.Employee">
+		<constructor-arg value="1" type="int"></constructor-arg>
+		<constructor-arg value="Akhil"></constructor-arg>
+	</bean>
+	
+	<bean id="add1" class="com.acecorp.Address">
+		<constructor-arg value="Khayal Nagar"></constructor-arg>
+		<constructor-arg value="123456" type="int"></constructor-arg>
+	</bean>
+	
+	<bean id="emp2" class="com.acecorp.Employee" parent="emp1">
+		<constructor-arg ref="add1"></constructor-arg>
+	</bean>
+	
+</beans>
